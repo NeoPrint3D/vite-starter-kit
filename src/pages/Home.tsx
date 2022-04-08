@@ -1,9 +1,17 @@
-export default function Home(){
+import { Helmet } from 'react-helmet';
+
+
+export default function Home() {
 
 
     return (
-        <div className="bg-gray-200 min-h-screen">
-            <h1>Home</h1>
-        </div>
+        <>
+            <Helmet>
+                <title>Home</title>
+            </Helmet>
+            <div className="bg-white min-h-screen">
+                <h1>Home</h1>
+            </div>
+        </>
     )
 }
