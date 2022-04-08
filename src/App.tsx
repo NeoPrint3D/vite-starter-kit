@@ -12,7 +12,7 @@ const Home = lazy(() => import('./pages/Home'))
 function App() {
 
   return (
-    <div className="bg-gray-200">
+    <div>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
