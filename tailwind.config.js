@@ -9,10 +9,9 @@ module.exports = {
       colors: {
         primary: "#0070f3",
         secondary: "#ff4081",
-        tertiary: "#ff4081",
       },
       minHeight: {
-        page : "calc(100vh - 6rem)",
+        page: "calc(100vh - 6rem)",
       },
 
 
@@ -21,4 +20,19 @@ module.exports = {
   plugins: [
     require("daisyui")
   ],
+  daisyui: {
+    themes: [{
+      mytheme: {
+        "primary": "#0070f3",
+        "secondary": "#ff4081",
+        "accent": "#eab308",
+        "neutral": "#191D24",
+        "base-100": "#2A303C",
+        "info": "#1d4ed8",
+        "success": "#22c55e",
+        "warning": "#FBBD23",
+        "error": "#dc2626",
+      },
+    }]
+  }
 }

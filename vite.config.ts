@@ -3,8 +3,6 @@ import { VitePWA as pwa } from "vite-plugin-pwa";
 import { readFileSync } from "fs";
 import react from "@vitejs/plugin-react";
 
-const manifest = JSON.parse(readFileSync("./manifest.json", "utf-8"));
-
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -12,8 +10,8 @@ export default defineConfig({
     pwa({
       strategies: "injectManifest",
       srcDir: "",
-      filename: "service-worker.js",
-      manifest,
+      filename: "./public/pwa/service-worker.js",
+      manifest: JSON.parse(readFileSync("./public/pwa/manifest.json", "utf-8"))
     }),
   ],
 });
