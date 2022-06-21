@@ -1,17 +1,17 @@
 {
+    "name": "Vite Template",
+    "short_name": "Vite Template",
+    "scope": "/",
+    "start_url": "/",
     "theme_color": "#fff",
     "background_color": "#fff",
     "display": "standalone",
-    "scope": "/",
-    "start_url": "/",
-    "name": "Vite Template",
-    "short_name": "Vite Template",
     "description": "A full featured Vite Template",
     "icons": [
         {
             "src": "/icons/icon-192x192.png",
             "sizes": "192x192",
-            "type": "image/png"
+            "purpose": "maskable"
         },
         {
             "src": "/icons/icon-256x256.png",

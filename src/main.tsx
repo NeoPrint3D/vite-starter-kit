@@ -13,8 +13,4 @@ const components = (
   </HelmetProvider>
 )
 
-if (rootElement?.hasChildNodes()) {
-  ReactDOM.hydrateRoot(rootElement, components)
-} else {
-  ReactDOM.createRoot(rootElement!).render(components)
-}
+ReactDOM.createRoot(rootElement!).render(components)
