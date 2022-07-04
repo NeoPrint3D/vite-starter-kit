@@ -8,10 +8,10 @@ export default defineConfig({
   plugins: [
     react(),
     pwa({
-      strategies: "injectManifest",
-      srcDir: "",
-      filename: "./public/pwa/service-worker.js",
-      manifest: JSON.parse(readFileSync("./public/pwa/manifest.json", "utf-8"))
+      manifest: JSON.parse(readFileSync("./manifest.json", "utf-8")), 
+      workbox: {
+      
+      },
     }),
   ],
 });
